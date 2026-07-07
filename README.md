@@ -47,19 +47,19 @@ GramPanchayat-Digital-Registry
 
 ### Login
 
-![Login](screenshots/admin_splash.jpg)
+![Login](screenshots/admin_splash.jpeg)
 
 ### Admin Dashboard
 
-![Admin Dashboard](screenshots/admindashboard.jpg)
+![Admin Dashboard](screenshots/admindashboard.jpeg)
 
 ### User Dashboard
 
-![User Dashboard](screenshots/userdashboard.jpg)
+![User Dashboard](screenshots/userdashboard.jpeg)
 
 ### AI Chatbot
 
-![Chatbot](screenshots/chatbot.jpg)
+![Chatbot](screenshots/chatbot.jpeg)
 
 ---
 
