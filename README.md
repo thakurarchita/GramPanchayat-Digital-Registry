@@ -55,7 +55,7 @@ GramPanchayat-Digital-Registry
 
 <p align="center">
   <img src="screenshots/birth_registration.jpeg" width="180"/>
-  <img src="screenshots/household_registration.jpeg" width="180"/>
+  <img src="screenshots/household_reg.jpeg" width="180"/>
   <img src="screenshots/chatbot.jpeg" width="180"/>
 </p>
 ---
