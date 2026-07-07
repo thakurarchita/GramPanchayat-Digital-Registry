@@ -50,12 +50,12 @@ GramPanchayat-Digital-Registry
 <p align="center">
   <img src="screenshots/admin_splash.jpeg" width="180"/>
   <img src="screenshots/admindashboard.jpeg" width="180"/>
-  <img src="screenshots/userdashboard.jpeg" width="180"/>
+  <img src="screenshots/userdashborad.jpeg" width="180"/>
 </p>
 
 <p align="center">
   <img src="screenshots/birth_registration.jpeg" width="180"/>
-  <img src="screenshots/death_registration.jpeg" width="180"/>
+  <img src="screenshots/household_registration.jpeg" width="180"/>
   <img src="screenshots/chatbot.jpeg" width="180"/>
 </p>
 ---
