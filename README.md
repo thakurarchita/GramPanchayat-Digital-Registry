@@ -48,15 +48,15 @@ GramPanchayat-Digital-Registry
 <h2>Screenshots</h2>
 
 <p align="center">
-  <img src="screenshots/login.png" width="180"/>
-  <img src="screenshots/admin_dashboard.png" width="180"/>
-  <img src="screenshots/user_dashboard.png" width="180"/>
+  <img src="screenshots/admin_splash.jpeg" width="180"/>
+  <img src="screenshots/admindashboard.jpeg" width="180"/>
+  <img src="screenshots/userdashboard.jpeg" width="180"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/birth_registration.png" width="180"/>
-  <img src="screenshots/death_registration.png" width="180"/>
-  <img src="screenshots/chatbot.png" width="180"/>
+  <img src="screenshots/birth_registration.jpeg" width="180"/>
+  <img src="screenshots/death_registration.jpeg" width="180"/>
+  <img src="screenshots/chatbot.jpeg" width="180"/>
 </p>
 ---
 
