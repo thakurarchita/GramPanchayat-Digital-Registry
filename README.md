@@ -82,8 +82,7 @@ git clone https://github.com/YOUR_USERNAME/GramPanchayat-Digital-Registry.git
 ---
 
 ## Project Status
-
-🚧 This project is currently under development.
+ currently under development.
 
 ### Completed Modules
 
