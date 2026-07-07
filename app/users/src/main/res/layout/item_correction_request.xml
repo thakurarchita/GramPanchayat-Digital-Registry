@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✏️ Correction Request"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#2196F3"/>
+
+            <ImageButton
+                android:id="@+id/btnRemoveRequest"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@android:drawable/ic_menu_delete"
+                android:background="?selectableItemBackgroundBorderless"
+                android:visibility="gone"
+                android:contentDescription="Remove Request"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginVertical="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbSpecificMember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correction for specific member"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/layoutMemberSelection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Member"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerMember"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/edit_text_blue_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member ID"
+                android:textColor="#000000"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tvMemberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not applicable"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                android:padding="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="12dp"
+                android:background="#F5F5F5"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Field to be Corrected *"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerField"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_blue_border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Value"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvOldValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Will be auto-filled"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="#F5F5F5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Value *"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etNewValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter corrected value"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_blue_border"
+            android:textSize="14sp"
+            android:maxLines="3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason for Correction *"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter reason for correction"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_blue_border"
+            android:textSize="14sp"
+            android:maxLines="3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Type"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerDocType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_blue_border"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Document Number"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:layout_marginBottom="4dp"/>
+
+        <EditText
+            android:id="@+id/etDocNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter document number"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/edit_text_blue_border"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnUploadDoc"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="📎 Upload Document (Optional)"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tvFileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No file selected"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

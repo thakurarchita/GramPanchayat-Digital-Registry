@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- For Android 13+ -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GramPanchayat"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31"
+        >
+
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".UserSplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.GramPanchayat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Dashboard Activity -->
+        <activity
+            android:name=".UserDashboardActivity"
+            android:exported="false" />
+
+        <!-- Activation Activity -->
+        <activity
+            android:name=".UserActivationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Household Activities -->
+        <activity
+            android:name=".ViewHouseholdActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewFamilyMembersActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ViewMemberDetailsActivity"
+            android:exported="false" />
+
+        <!-- Scheme Activities -->
+        <activity
+            android:name=".UserEligibleSchemesActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SchemeDetailsActivity"
+            android:exported="false" />
+
+        <!-- Request Activities -->
+        <activity
+            android:name=".SubmitRequestActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".BirthAdditionForm"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".DeathRequestActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".CorrectionRequestForm"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Request Status Activity -->
+        <activity
+            android:name=".RequestStatusActivity"
+            android:exported="false" />
+        <activity android:name=".ForgotPasswordActivity" />
+    </application>
+
+</manifest>

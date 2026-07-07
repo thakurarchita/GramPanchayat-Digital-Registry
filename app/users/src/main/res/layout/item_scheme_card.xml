@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:backgroundTint="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Scheme Name and Badge Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvSchemeName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Scheme Name"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#1E88E5"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/tvCategoryBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Household"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+
+        <!-- Department -->
+        <TextView
+            android:id="@+id/tvDepartment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏢 Department"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+        <!-- Benefit Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvBenefit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💰 Financial Assistance"
+                android:textSize="13sp"
+                android:textColor="#2E7D32"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Eligibility Summary -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvEligibilitySummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✅ Eligible"
+                android:textSize="12sp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- For Individual: Member Name -->
+        <TextView
+            android:id="@+id/tvMemberName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For: John Doe"
+            android:textSize="12sp"
+            android:textColor="#1E88E5"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+        <!-- Apply Button -->
+        <Button
+            android:id="@+id/btnApply"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="12dp"
+            android:text="Apply Now"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1E88E5"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
