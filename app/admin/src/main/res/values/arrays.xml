@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Gender options -->
+    <string-array name="gender_options">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>All</item>
+    </string-array>
+
+    <!-- Caste options -->
+    <string-array name="caste_options">
+        <item>Select Caste</item>
+        <item>General</item>
+        <item>OBC</item>
+        <item>SC</item>
+        <item>ST</item>
+        <item>All</item>
+    </string-array>
+
+    <!-- Scheme Status options -->
+    <string-array name="scheme_status">
+        <item>Select Status</item>
+        <item>Active</item>
+        <item>Inactive</item>
+        <item>Coming Soon</item>
+        <item>Expired</item>
+    </string-array>
+</resources>

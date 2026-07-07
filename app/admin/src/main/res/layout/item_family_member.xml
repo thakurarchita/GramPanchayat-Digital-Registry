@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="16dp"
+    android:background="#F5F5F5"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Member"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FF9800"/>
+
+        <ImageButton
+            android:id="@+id/btnRemoveMember"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete"
+            android:background="?selectableItemBackgroundBorderless"
+            app:tint="#F44336"/>
+    </LinearLayout>
+
+    <!-- Member Photo Upload -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member Photo"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp">
+
+        <ImageView
+            android:id="@+id/ivMemberImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/edit_text_orange_border_small"/>
+
+        <Button
+            android:id="@+id/btnUploadMemberImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"/>
+    </LinearLayout>
+
+    <!-- Member Name (Required) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name *"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etMemberName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter member name"
+        android:textColorHint="#666666"
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_orange_border_small"/>
+
+    <!-- Aadhaar Number (Optional) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aadhaar Number"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etMemberAadhaar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter 12 digit Aadhaar"
+        android:textColorHint="#666666"
+        android:inputType="number"
+        android:maxLength="12"
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_orange_border_small"/>
+
+    <!-- Age and Gender Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <EditText
+                android:id="@+id/etMemberAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Age"
+                android:textColorHint="#666666"
+                android:inputType="number"
+                android:padding="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edit_text_orange_border_small"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender *"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/edit_text_orange_border_small"
+                android:theme="@style/SpinnerTheme"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Date of Birth -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etMemberDob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DD/MM/YYYY"
+        android:textColorHint="#666666"
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_orange_border_small"
+        android:focusable="false"/>
+
+    <!-- Relation to Head (Required) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relation to Head *"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/spinnerRelation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_orange_border_small"
+        android:theme="@style/SpinnerTheme"/>
+
+    <!-- Marital Status -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marital Status"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/spinnerMaritalStatus"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_orange_border_small"
+        android:theme="@style/SpinnerTheme"/>
+
+    <!-- Occupation -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Occupation"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etMemberOccupation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter occupation"
+        android:textColorHint="#666666"
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edit_text_orange_border_small"/>
+
+    <!-- Education -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Education"
+        android:textSize="12sp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etEducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter education qualification"
+        android:textColorHint="#666666"
+        android:padding="8dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/edit_text_orange_border_small"/>
+
+</LinearLayout>
