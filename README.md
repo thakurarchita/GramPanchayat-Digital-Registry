@@ -45,22 +45,19 @@ GramPanchayat-Digital-Registry
 
 ## Screenshots
 
-### Login
+<h2>Screenshots</h2>
 
-![Login](screenshots/admin_splash.jpeg)
+<p align="center">
+  <img src="screenshots/login.png" width="180"/>
+  <img src="screenshots/admin_dashboard.png" width="180"/>
+  <img src="screenshots/user_dashboard.png" width="180"/>
+</p>
 
-### Admin Dashboard
-
-![Admin Dashboard](screenshots/admindashboard.jpeg)
-
-### User Dashboard
-
-![User Dashboard](screenshots/userdashboard.jpeg)
-
-### AI Chatbot
-
-![Chatbot](screenshots/chatbot.jpeg)
-
+<p align="center">
+  <img src="screenshots/birth_registration.png" width="180"/>
+  <img src="screenshots/death_registration.png" width="180"/>
+  <img src="screenshots/chatbot.png" width="180"/>
+</p>
 ---
 
 ## Installation
